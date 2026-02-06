@@ -1,0 +1,10 @@
+prefix=/run/media/user/593d876a-4036-4255-bd45-33baba503068/DSMILSystem/tools/FLASHROM/pci-install/usr
+includedir=${prefix}/include
+libdir=${prefix}/lib
+idsdir=${prefix}/share
+
+Name: libpci
+Description: libpci
+Version: 3.14.0
+Libs: -L${libdir} -lpci -lz -lresolv -ludev
+Cflags: -I${includedir}

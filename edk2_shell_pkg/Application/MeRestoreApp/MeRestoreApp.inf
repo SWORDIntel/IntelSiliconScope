@@ -1,0 +1,43 @@
+## @file
+#  ME Firmware Restoration UEFI Application
+#
+#  Copyright (c) 2025, DSMIL Project. All rights reserved.
+#
+#  SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = MeRestoreApp
+  FILE_GUID                      = a1b2c3d4-e5f6-7890-abcd-ef1234567890
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ShellCEntryLib
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 EBC
+#
+
+[Sources]
+  MeRestoreApp.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  ShellCEntryLib
+  ShellLib
+  UefiLib
+  UefiBootServicesTableLib
+  BaseMemoryLib
+  MemoryAllocationLib
+  IoLib
+  PciLib
+  FileHandleLib
+
+[Guids]
+  gEfiFileInfoGuid

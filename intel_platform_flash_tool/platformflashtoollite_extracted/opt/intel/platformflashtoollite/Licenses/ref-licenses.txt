@@ -1,0 +1,74 @@
+Intel(R) Platform Flash Tool makes use of the following libraries/packages:
+
+Libraries: 
+    Qt
+        License: Lesser General Public License (LGPLv2.1), 
+        Website: http://download.qt.io
+        sources:
+        https://download.01.org/android-ia/tools/platformflashtool-lite/3rd-parties/qt-everywhere-opensource-src-5.5.1.zip
+
+    Xfstk Downloader API
+        License: LGPL 2.1 
+        Website: http://sourceforge.net/projects/xfstk
+        sources
+        https://download.01.org/android-ia/tools/platformflashtool-lite/3rd-parties/xfstk-dldr-linux-source-1.8.0.tar.gz
+
+    Boost
+        License: Boost Software License, 
+        Website: http://www.boost.org/users/license.html
+
+    QJson 
+        License: Lesser GNU General Public License version 2.1, 
+        Website: http://qjson.sourceforge.net/, 
+        sources:
+        https://download.01.org/android-ia/tools/platformflashtool-lite/3rd-parties/qjson-source-0.8.1.zip
+
+    libusb 
+        License: Lesser GNU General Public License version 2.1, 
+        Website: http://www.libusb.org/, 
+        sources:
+        https://download.01.org/android-ia/tools/platformflashtool-lite/3rd-parties/libusb-1.0.0.tar.bz2
+        https://download.01.org/android-ia/tools/platformflashtool-lite/3rd-parties/libusb-compat-0.1.4.tar.bz2
+
+    MinGW runtime library 
+        License: MIT license, 
+        Website: http://www.mingw.org/
+
+    GCC Runtime Library
+        License: GCC RUNTIME LIBRARY EXCEPTION, 
+        Website: https://www.gnu.org/licenses/gcc-exception-3.1.html
+        sources: https://download.01.org/android-ia/tools/platformflashtool-lite/3rd-parties/gcc-gcc-4_4_0-release.zip
+
+
+Packages:
+    Tango Desktop Project: Package tango-icon-theme, 
+        License: Public Domain,
+        Website: http://tango.freedesktop.org/
+
+    Android Debug Bridge, The Android Open Source Project, 
+        License: Apache License, 
+        Website: https://developer.android.com/sdk
+
+    fastboot: The Android Open Source Project, 
+        License: see fastboot.txt in <installation folder>/licenses/  
+        Website: https://developer.android.com/sdk
+
+    7-zip:  
+        License: GNU LGPL, 
+        Website: http://www.7-zip.org
+        sources:
+        https://download.01.org/android-ia/tools/platformflashtool-lite/3rd-parties/7z920-source.tar.bz2
+
+    dfu-util: Device Firmware Upgrade Utilities, 
+        License: GPL v2,  
+        Website: http://dfu-util.sourceforge.net/
+        sources: https://download.01.org/android-ia/tools/platformflashtool-lite/3rd-parties/dfu-util-0.8.4.zip
+
+    InnoSetup, 
+        Website: http://www.jrsoftware.org/isinfo.php
+
+
+Copies of the various licenses associated with the above libraries can be found 
+within the installation folder for reference. 
+
+Please see the contents of <installation folder>/Licenses/ for additional details.

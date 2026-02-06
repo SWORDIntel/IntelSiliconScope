@@ -1,0 +1,135 @@
+# ============================================================================
+# DSMIL Firmware Toolkit - Git Ignore
+# ============================================================================
+
+# Build directories
+build/
+builddir/
+dist/
+*.o
+*.so
+*.a
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+
+# Compiler output
+*.elf
+*.bin
+*.hex
+*.map
+*.out
+
+# Flashrom specific
+flashrom/builddir/
+flashrom/.deps/
+flashrom/flashrom
+flashrom/ft2232_spi.o
+flashrom/usb_spi.o
+
+# EMBA specific
+emba/log/
+emba/tmp/
+emba/work/
+emba/*.log
+emba/*.tmp
+
+# EDK2 specific
+edk2_shell_pkg/Build/
+edk2_shell_pkg/Conf/
+edk2_shell_pkg/*.log
+
+# Python virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Test outputs
+test_results/
+coverage/
+.coverage
+.noseids
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.out
+
+# Firmware dumps and backups
+*.bin
+*.rom
+*.fw
+*.dump
+backup_*
+nvm_*
+gbe_*
+me_*
+
+# Wine specific
+dosdevices/
+system.reg/
+user.reg/
+userdef.reg/
+
+# QEMU specific
+*.qcow2
+*.img
+qemu_*
+
+# Documentation build
+docs/_build/
+docs/build/
+*.html
+*.pdf
+
+# Package files
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+
+# Local configuration
+.env.local
+config.local
+settings.local
+
+# Security sensitive
+*.key
+*.pem
+*.crt
+secrets/
+private/
+
+# Development
+debug/
+dev/
+experimental/
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

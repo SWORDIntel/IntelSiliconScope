@@ -1,0 +1,21 @@
+--- a/chipset_enable.c
++++ b/chipset_enable.c
+@@ -935,6 +935,13 @@ static int enable_flash_pch100_or_c620(const struct programmer_cfg *cfg,
+ 		return ret;
+ 	}
+ #if CONFIG_USE_LIBPCI_ECAM == 1
++	/* Force legacy PCI access for Meteor Lake (8086:7E23) to avoid ECAM issues */
++	if (dev->device_id == 0x7E23) {
++		pci_acc->method = PCI_ACCESS_I386_TYPE1;
++		msg_pdbg("Forcing PCI_ACCESS_I386_TYPE1 for Meteor Lake SPI controller (8086:7E23)\n");
++	} else {
++		pci_acc->method = PCI_ACCESS_ECAM;
++		msg_pdbg("Using libpci PCI_ACCESS_ECAM\n");
++	}
++#else
+ 	pci_acc->method = PCI_ACCESS_ECAM;
+ 	msg_pdbg("Using libpci PCI_ACCESS_ECAM\n");
+ #else
+ 	pci_acc->method = PCI_ACCESS_I386_TYPE1;
+ 	msg_pdbg("Using libpci PCI_ACCESS_I386_TYPE1\n");
+ #endif

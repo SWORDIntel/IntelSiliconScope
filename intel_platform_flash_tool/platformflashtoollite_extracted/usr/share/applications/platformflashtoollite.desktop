@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=5.8.9
+Encoding=UTF-8
+Name=Platform Flash Tool Lite
+Comment=Intel(R) Platform Flash Tool Lite
+Type=Application
+Terminal=false
+Categories=Application;Intel
+Exec=/usr/bin/platformflashtoollite
+Icon=/usr/share/pixmaps/platformflashtoollite.png

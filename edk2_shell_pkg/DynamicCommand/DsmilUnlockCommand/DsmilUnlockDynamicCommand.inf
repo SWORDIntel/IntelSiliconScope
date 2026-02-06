@@ -1,0 +1,52 @@
+##  @file
+# Provides Shell 'dsmil-unlock' dynamic command.
+#
+# Copyright (c) 2025, DSMIL Project. All rights reserved.
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010006
+  BASE_NAME                      = dsmilUnlockDynamicCommand
+  FILE_GUID                      = A1B2C3D4-E5F6-7890-ABCD-1234567890EF
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = DsmilUnlockCommandInitialize
+  UNLOAD_IMAGE                   = UnloadImage
+
+[Sources.common]
+  DsmilUnlock.h
+  DsmilUnlock.c
+  DsmilUnlockDynamicCommand.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  UefiCpuPkg/UefiCpuPkg.dec
+
+[LibraryClasses]
+  MemoryAllocationLib
+  BaseLib
+  BaseMemoryLib
+  DebugLib
+  ShellLib
+  UefiLib
+  UefiRuntimeServicesTableLib
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint
+  IoLib
+  PciLib
+  PrintLib
+
+[Protocols]
+  gEfiShellDynamicCommandProtocolGuid            ## PRODUCES
+
+[Depex]
+  TRUE
+
+[Pcd]
+
+[BuildOptions]
+  GCC:*_*_*_CC_FLAGS = -Wno-unused-variable -Wno-unused-function
